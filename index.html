@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/752caced55.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="containerHeader"> <!-- Container contains navagation bars -->
+        <div class="container">
+            <nav>
+                <img src="images/portfolio.png" alt="logo" class="logo">
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#myWork">My Works</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                    <i class="fa-solid fa-xmark fa-2x" onclick="menuClose()"></i>
+                </ul>
+                
+                <i class="fa-solid fa-bars fa-2x" onclick="menuOpen()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Python Programmer</p>
+                <h1>I am <span>Waqar</span><br>Jelali. I love programming</h1>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- About section of portfolio sharts here-->
+    <div id="about"> <!-- Id used for navagation anchor tag when the user clicks the navigation it takes the user to the selected section of the page -->
+        <div class="container">
+            <div class="row">
+                <div class="col-about-1">
+                    <img src="images/me.png" alt="profile picture">
+                </div>
+                <div class="col-about-2">
+                    <h1 class="about-title">About Me</h1>
+                    <p class="biography">I am a front-end web developer. I can provide an interative and responsive web design with clean code. I have been working for years with web design, creating resposive websites which works on all devices regardless of the device size. Moreover, I have also created fully functional simple android apps and have a huge interest in computer programming.</p>
+                    <div class="bio-title-1">
+                        <p class="tabs aktiv-l" onclick="openTab('education')">Education</p>
+                        <p class="tabs" onclick="openTab('skills')">Skills</p>
+                        <p class="tabs" onclick="openTab('workExperience')">Work Experience</p>
+                    </div>
+                    <div class="tabs-cont aktiv-t" id="education">
+                        <ul><!-- Tabs are connected to the javascript functions shows specific fields when clicked -->
+                            <li><span>Mullsjö Folkhögskola - 2017</span><br>IT-Webb</li>
+                            <li><span>Skövde Universitet - 2018</span><br>Webb-design & Development</li>
+                            <li><span>Skövde Universitet - 2018</span><br>Android application development</li>
+                            <li><span>Komvux - 2021</span><br>Datateknik, Nätverkteknik</li>
+                    
+                        </ul>
+                    </div>
+                    <div class="tabs-cont" id="skills">
+                        <ul><!-- Tabs are connected to the javascript functions shows specific fields when clicked -->
+                            <li><span>Web Development</span><br>Structuring Web page with HTML & CSS</li>
+                            <li><span>Programming</span><br>Programming in Python Framework Flask</li>
+                            <li><span>Networking</span><br>IT-Infrastructure & secure networks</li>
+                            <li><span>App Development</span><br>Development of secure Android applications</li>
+                        </ul>
+                    </div>
+                    <div class="tabs-cont" id="workExperience">
+                        <ul><!-- Tabs are connected to the javascript functions shows specific fields when clicked -->
+                            <li><span>2018 - Current</span><br>Front-end webdevelopment</li>
+                            <li><span>2019 - 2020</span><br>Back-end webdevelopment with Python Framework Flask</li>
+                            <li><span>2020 - 2021</span><br>Secure router and switches in networks</li>
+                            <li><span>2021 - 2022</span><br>Developed simple Android applications</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Here starts section Services -->
+    <div id="services" class="services">
+        <div class="container">
+            <h1 class="about-title">Services</h1>
+            <div class="serv-list">
+                <div><!-- Icons are taken from awesomeicon.com-->
+                    <i class="fa-brands fa-html5 fa-6x"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is my passion. I have worked on several web design projects.</p>
+                    <a href="#">Learn more</a><!-- Can be further lined to any source-->
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-code fa-5x"></i>
+                    <h2>Programming</h2>
+                    <p>I have worked with several programming languages such as Python, C++ and Javascript.</p>
+                    <a href="#">Learn more</a><!-- Can be further lined to any source-->
+                
+                </div>
+                <div>
+                    <i class="fa-brands fa-android fa-5x"></i>
+                    <h2>App Development</h2>
+                    <p>I have a huge interest in creating Android application and I have created many simple applications for android phones.</p>
+                    <a href="#">Learn more</a><!-- Can be further lined to any source-->
+                
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <!-- My Work section start here -->
+    <div id="myWork" class="myWork">
+        <div class="container">
+            <h1 class="about-title">My Works</h1>
+            <div class="work-lst">
+                <div class="work">
+                    <img src="Images/work1.png" alt="Work 1"> <!-- All images are free with creative common (CC) free licese-->
+                    <div class="layr">
+                        <h3>Something here</h3>
+                        <p>Information will be filled here later.</p>
+                        <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work1.png" alt="Work 2"><!-- All images are free with creative common (CC) free licese-->
+                    <div class="layr">
+                        <h3>Something here</h3>
+                        <p>Information will be filled here later.</p>
+                        <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work1.png" alt="Work 3"><!-- All images are free with creative common (CC) free licese-->
+                    <div class="layr">
+                        <h3>Something here</h3>
+                        <p>Information will be filled here later.</p>
+                        <a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Contact page section starts here -->
+    <div id="contact-me" class="contact-me">
+        <div class="container">
+            <h1 class="about-title">Contact Me</h1>
+            <p>Contact me via email to create a beautiful website. You can also follow me on social media. </p>
+            <a class="btn" href="mailto:email@example.com">Email Me</a>
+            
+                <div class="social-icon"><!-- External links to the social media platforms-->
+                    <span><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram fa-3x"></i></a>
+                    </span>
+                </div>    
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Waqar Jelali 2022</p>
+    </div>
+  <script src="javascript.js"></script>  
+</body>
+</html>

@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Courier New', Courier, monospace; 
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(247, 247, 247);
+    color: rgb(29, 29, 29);
+}
+
+#containerHeader{
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+   
+}
+#containerHeader nav{
+    border-bottom: 1px solid #fd826c;
+    padding-bottom: 20px;
+
+}
+
+.container{
+    padding:10px 5%;
+}
+
+.logo{
+    width: 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+      
+}
+
+nav a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 48, 87);
+    font-weight: bold;
+    font-size: 19px;
+
+    
+}
+
+nav a::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #ff6600;
+    transition: 0.5s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 28px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 35px;
+}
+.header-text span{
+    color: rgb(15, 148, 236);
+    font-size: 50px;
+    
+}
+hr {
+    margin-bottom: 15vh;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* About Section */
+
+#about{
+    padding: 0;
+    color: #0166a0;
+    margin-bottom: 12vh;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.col-about-1{
+    flex-basis:30%;
+    
+}
+.col-about-1 img{
+    width: 90%;
+   
+}
+.col-about-2{
+    flex-basis:70%; /*Flex-basis is used to adjust the width of the column*/
+
+}
+.about-title{
+    font-weight: 500;
+    font-size: 55px;
+   
+}
+.biography{
+    color:rgb(29, 29, 29);
+    font-size: 20px;
+    padding: 10px 5px 10px 0 ;
+}
+.bio-title-1{
+    display: flex;
+    margin: 15px 0 35px;
+}
+.tabs{
+    font-size: 22px;
+    margin-right: 40px;
+    color: rgb(8, 82, 85);
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    background-color: #74cfdb;
+    padding: 7px;
+    border-radius: 4px;
+    border-bottom: 2px solid #ff6600;
+}
+.tabs::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background: rgb(224, 75, 132);
+    transition: 0.5s;
+}
+
+.tabs-cont ul li{
+    list-style: none;
+    margin: 12px 0;
+}
+.tabs-cont ul li span{
+    color:rgb(224, 75, 132);
+    font-size: 16px;
+    font-weight: bold;
+}
+.tabs-cont{
+    display: none;
+}
+.tabs-cont.aktiv-t{
+    display: block;
+}
+
+/* Services Section starts here */
+.services{
+    padding: 0;
+    color: #0166a0;
+    margin-bottom: 15vh;
+
+}
+.serv-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin-top:30px;
+    line-height: 1.2em;
+}
+
+.serv-list h2 {
+    padding: 20px 0;
+    text-decoration: none;
+    color: rgb(224, 75, 132);
+}
+.serv-list a{
+    padding: 20px 0 ;
+    text-decoration: none;
+    color: #ff6600;
+    font-weight: bold;
+}
+.serv-list div {
+    color: #0166a0;
+    background-color: #eaecee;
+    padding-top: 50px;
+    border-radius: 5%;
+    padding: 50px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+.serv-list div:hover {
+    background-color: #d6e5f3;
+    transform: translateY(-10px);
+
+}
+
+/* My Work section start here */
+
+.myWork {
+    padding: 50px 0;
+    color: #0166a0;
+    margin-bottom: 15vh;
+
+}
+.work-lst{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin-top: 30px;
+    line-height: 1.2em;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    display: block;
+    padding-top: 30px;
+    width:50%;
+
+}
+.layr h3 {
+    padding: 30px 0;
+    text-decoration: none;
+    color: rgb(224, 75, 132);     
+}
+
+.layr a i{
+    color: #ff6600;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* CSS for Contact me page starts here*/
+
+.contact-me {
+    padding: 0;
+    color: #0166a0;
+   
+
+}
+
+.contact-me p {
+    padding: 30px 0 50px 0;
+    font-size: 20px;
+    color: rgb(224, 75, 132);
+}
+
+.contact-me div {
+    color: #0166a0;
+    background-color: #eaecee;
+    padding: 100px 25px ;
+    width: auto;
+   
+
+}
+.contact-me .btn {
+    background: #0166a0;
+    color: #eaecee;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.contact-me .btn:hover {
+    background: #ff6600;
+    color: #eaecee;
+    cursor: pointer;
+
+}
+
+.social-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+
+.social-icon a {
+    
+    text-decoration: none;
+    color: #0166a0;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    padding-left: 20px;
+    width: auto;
+
+}
+
+.social-icon a i:hover {
+    background: #ff6600;
+    color:beige;
+    cursor: pointer;
+    border: 1px solid #bb77e2;;
+    border-radius: 2px;
+     
+}
+
+.copyright {
+    text-align: center;
+    height: 5vh;
+    bottom: 0;
+   
+}
+.copyright p{
+    text-align: center;
+    color: #f12400;
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 2px solid #fd826c;
+    background-color: #0166a0;
+    color: aliceblue;
+    padding: 30px;
+  
+}
+nav .fa-solid{
+    display: none;
+}
+/* Resposive website for mobile devices. This section make the website to be used in different devices with resolution less than 600px width*/
+@media only screen and (max-width: 600px){
+    nav .fa-solid {
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: -210px;
+        background-color: #002e49;
+        z-index: 2;
+        width: 210px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.5s;
+        
+    }
+    nav a{
+        color: #eaecee;
+    }
+    nav ul li {
+        display: block;
+        margin:20px 10px 20px 10px;
+        border-bottom: 1px solid #fd826c;
+        width:50%;
+    }
+    nav ul li:hover {
+        color: #fd826c;
+        
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        cursor:pointer;
+        top: 8px;
+        left: 14px;
+        color: aliceblue;
+    }
+    .header-text{
+        margin: 30%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 16px;
+        
+    }
+    #containerHeader {
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+    }
+    #containerHeader img{ /*Fix the portfolio image logo on mobile screen*/
+        width: 40%;
+    }
+    .col-about-1 img {
+        width: 250%;
+        padding-left: 80px;
+    }
+    .col-about-2 {
+        flex-basis: 30%;
+    }
+    .col-about-2 h1{
+        font-size: 30px;
+        padding-top: 10vh;
+        font-weight: bold;
+    }
+    .col-about-2 p {
+        font-size: 16px;
+        padding: 5vh 5px 5vh 0 ;
+    }
+    hr{
+        margin: 30%;
+    }
+    .bio-title-1 .tabs{
+        display: flex;
+        margin: 8px;
+        padding:2px;
+    }
+    .bio-title-1 .tabs p{
+        font-size: 10px;
+    }
+            
+    .services h1{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .serv-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+        margin-top: 20px;
+        line-height: 1.1em;
+    }
+    .serv-list i{
+        font-size: 50px;
+        font-weight: 100;
+    }
+    .serv-list a{
+       
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .serv-list h2 {
+
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .myWork h1 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .myWork img {
+        width: 80%;
+        padding-left: 80px;
+    }
+    .myWork .layr h3{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .myWork .layr p {
+        font-size: 16px;
+        padding: 0.5vh 5px 0.5vh 0;
+    }
+    .myWork .layr{
+       margin-bottom: 20px;
+    }
+    .myWork .layr i{
+        font-size: 20px;
+    }
+    .contact-me h1 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .contact-me p {
+        font-size: 16px;
+        padding: 5vh 5px 8vh 0;
+    }
+    .contact-me .btn{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .contact-me .social-icon i {
+        font-size: 30px;
+    }
+}
+
